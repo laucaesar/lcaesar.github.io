@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Jateng</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      background-color: #111;
+      line-height: 1.6;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      background: #000;
+    }
+    nav a {
+      color: #ccc;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    nav a.active {
+      color: yellow;
+    }
+    header {
+  position: relative;
+  height: 90vh;
+  background: url('https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?cs=srgb&dl=pexels-jaime-reimer-1376930-2662116.jpg&fm=jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 64px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .card {
+      background: #222;
+      border-radius: 15px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    footer {
+      background: #000;
+      color: #888;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="information.html" class="active">Information</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="contact.html">Contact us</a>
+  </nav>
+  <header>
+    <h1>About Jateng</h1>
+  </header>
+
+  <section>
+    <div class="card">
+      <img src="https://borobudur.injourneydestination.id/wp-content/uploads/2024/11/Borobudur-JOP-scaled-1-500x500.jpg" alt="Borobudur">
+      <div class="card-content">
+        <h2>Get to Know About Jateng</h2>
+        <p>Jateng (Jawa Tengah or Central Java) is a captivating region where cultural heritage, vast nature, and warm hospitality come together. From the awe-inspiring temples of Borobudur and Prambanan, to the serene highlands of Dieng Plateau and the bustling traditional markets of Solo and Semarang, Central Java offers a rich tapestry of experiences for every traveler. 
+          Whether you're exploring centuries-old traditions, savoring authentic Javanese cuisine, or embarking on adventures through volcanoes, beaches, and historic cities, Jateng promises memories that last a lifetime. With its unique blend of past and present, Central Java invites you to discover the soul of Indonesia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Get to Know Us More</h2>
+    <p>Explore the peaceful valleys of Mount Bismo, Yogyakarta. Located deep in the hinterlands, this hidden gem is perfect for nature enthusiasts. Experience hiking, calm evenings, and an authentic Javanese atmosphere.</p>
+  </section>
+
+   <footer>
+        <p>Contact: info@jogjatrip.co.id | Instagram: @jogjatrip</p>
+        <p>&copy; 2025 Jogja Trip. All rights reserved.</p>
+      </footer>
+</body>
+</html>

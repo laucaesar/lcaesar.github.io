@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Your Trip</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .radio-group {
+      margin-top: 15px;
+    }
+
+    .radio-group label {
+      font-weight: normal;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .radio-group input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .submit-btn {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #218838;
+    }
+
+    #summary {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #e9ffe9;
+      border: 1px solid #28a745;
+      border-radius: 8px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Form Pemesanan Wisata</h2>
+    <form id="tourForm">
+      <label for="name">Nama</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="notelp">No Telp</label>
+      <input type="number" id="notelp" name="notelp" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <div class="radio-group">
+        <label>Pilih Destinasi:</label>
+        <label><input type="radio" name="destination" value="Rp 200.000 - Candi Borobudur" required>Rp 200.000 - Candi Borobudur</label>
+        <label><input type="radio" name="destination" value="Rp 100.000 - Kota Tua Lasem">Rp 100.000 - Kota Tua Lasem</label>
+        <label><input type="radio" name="destination" value="Rp 400.000 - Mount Bismo">Rp 400.000 - Mount Bismo</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Kirim</button>
+    </form>
+
+    <div id="summary">
+      <h3>Ringkasan Pemesanan:</h3>
+      <p><strong>Nama:</strong> <span id="sumName"></span></p>
+      <p><strong>No Telp:</strong> <span id="sumTelp"></span></p>
+      <p><strong>Email:</strong> <span id="sumEmail"></span></p>
+      <p><strong>Destinasi:</strong> <span id="sumDest"></span></p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("tourForm");
+    const summary = document.getElementById("summary");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = form.name.value.trim();
+      const notelp = form.notelp.value.trim();
+      const email = form.email.value.trim();
+      const destination = form.destination.value;
+
+      if (!name || !notelp || !email || !destination) {
+        alert("Semua kolom harus diisi!");
+        return;
+      }
+
+      document.getElementById("sumName").textContent = name;
+      document.getElementById("sumTelp").textContent = notelp;
+      document.getElementById("sumEmail").textContent = email;
+      document.getElementById("sumDest").textContent = destination;
+
+      summary.style.display = "block";
+      form.reset();
+    });
+  </script>
+</body>
+</html>

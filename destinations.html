@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, sans-serif;
+        color:white;
+        background:#111;
+        line-height: 1.6;
+    }
+    nav{
+        display:flex;
+        justify-content: center;
+        padding:20px;
+        background:#000;
+    }
+    nav a{
+        color:#ccc;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    nav a.active{
+        color:yellow;
+    }
+    header{
+        position: relative;
+        height:90vh;
+        background: url("Jawa Tengah.png") no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    header h1{
+        font-size: 64px;
+        color: #ccc;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px 40px;
+        border-radius: 15px;
+        font-weight: bold;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    }
+
+    section{
+        max-width: 1000px;
+        margin:auto;
+        padding: 40px 20px;
+    }
+    .card{
+        background:#222;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-content{
+        padding:20px;
+    }
+    .grid{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    footer {
+      background: #000;
+      color: #888;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+</style>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="information.html">Information</a>
+        <a href="destinations.html" class="active">Destinations</a>
+        <a href="contact.html">Contact us</a>
+    </nav>
+    <header>
+        <h1>Destinations</h1>
+    </header>
+        <div class="card">
+            <div class="card-content"><h2>Places to Visit</h2>
+            <p>Central Java is filled with places that offer a perfect blend of history, nature, and local culture. Here are some spots you should visit:
+            </p>
+        </div>
+   </div>
+
+
+ <section>
+        <div class="card">
+            <img src="kota tua lasem.jpg" alt="Kota Tua Lasem">
+            <div class="card-content"><h2>Get to Know About Lasem</h2>
+
+            <p>Located on the northern coast of Central Java, Lasem is a historic town once known as a vital trading port during the Majapahit and colonial eras. Walk through narrow streets lined with Chinese-style temples, old Dutch buildings, and centuries-old batik workshops. Lasem's unique blend of Javanese and Tionghoa (Chinese-Indonesian) heritage makes it a living museum of cultural fusion.
+            </p>
+        </div>
+   </div>
+ </section>
+
+ <section>
+        <div class="card">
+            <img src="https://borobudur.injourneydestination.id/wp-content/uploads/2024/11/Borobudur-JOP-scaled-1-500x500.jpg" alt="Borobudur">
+            <div class="card-content"><h2>Get to Know About Borobudur</h2>
+
+            <p>Just outside the town of Magelang, this 9th-century wonder stands as the largest Buddhist temple in the world. Comprising over 2,600 relief panels and 500 Buddha statues, Borobudur is both a spiritual pilgrimage site and an architectural masterpiece. Surrounded by misty hills and rice fields, it's a must-see symbol of Indonesia’s ancient glory.
+            </p>
+        </div>
+   </div>
+ </section>
+
+ <section>
+        <div class="card">
+            <img src="dieng plateau.jpg" alt="Borobudur">
+            <div class="card-content"><h2>Get to Know About Dieng</h2>
+
+            <p>High above sea level in the Wonosobo region, the Dieng Plateau is home to some of the oldest Hindu temples in Java, dating back to the 8th century. Often referred to as the "Abode of the Gods," Dieng offers geothermal wonders like colored lakes, steaming craters, and a mystical atmosphere shaped by myth and legend. It’s a place where nature and spirituality meet.
+
+        </div>
+   </div>
+ </section>
+
+ <section>
+        <div class="card">
+            <img src="gunung bismo.jpg" alt="Borobudur">
+            <div class="card-content"><h2>Get to Know About Bismo</h2>
+
+            <p>Tucked away in the highlands of Banjarnegara, Mount Bismo is a lesser-known hiking destination with panoramic sunrise vistas and peaceful trails. Unlike the more famous peaks, Bismo provides a tranquil experience for trekkers who want to connect with nature without the crowds. Local legends speak of the mountain as a silent guardian of the surrounding valleys.
+
+        </div>
+   </div>
+ </section>
+
+
+      <footer>
+        <p>Contact: info@jogjatrip.co.id | Instagram: @jogjatrip</p>
+        <p>&copy; 2025 Jogja Trip. All rights reserved.</p>
+      </footer>
+</body>
+</html>

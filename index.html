@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Jateng - Official Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .background {
+            background: url('bg 1.png') no-repeat center center/cover;
+            height: 100vh;
+            position: relative;
+        }
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+        }
+        .logo{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+        nav a {
+            color: #ccc;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        nav a.active {
+            color: yellow;
+        }
+        .content {
+            position: relative;
+            top: 30%;
+            left: 5%;
+            max-width: 40%;
+        }
+        .content h1 {
+            font-size: 48px;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: black
+        }
+        .content p {
+            margin: 20px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: black;
+        }
+        .btn {
+            background-color: yellow;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .carousel {
+            position: absolute;
+            bottom: 40px;
+            right: 5%;
+            display: flex;
+            gap: 20px;
+        }
+        .carousel img {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="information.html">Information</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact us</a>
+        </nav>
+        <div class="content">
+            <h1>Visit Jateng</h1>
+            <p>The Jogja trip by Santa Laurensia School was an unforgettable journey of culture, history, and connection. From iconic sites like Borobudur and Keraton Yogyakarta to hands-on experiences with batik and silver crafting, students explored the heart of Javanese heritage. More than a trip, it was a chance to grow, learn, and feel the rich blend of tradition and tourism that makes Jogja so special.</p>
+            <a href="form.html">
+            <button class="btn">Book Your Trip</button>
+            </a>
+        </div>
+        <div class="carousel">
+            <img src="IMG_9735 (2).png" alt="Candi Borobudur">
+            <img src="IMG_9757.png" alt="Jalan Malioboro">
+            <img src="IMG_9805.png" alt="Gunung Merapi">
+        </div>
+    </div>
+</body>
+</html>
